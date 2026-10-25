@@ -2,7 +2,7 @@
 
 **Are airport security complaints getting better or worse, and where are they coming from?** This interactive Tableau dashboard tells the story of ten years of complaints filed with the Transportation Security Administration, showing how volume changed through COVID-19, which airports generate the most complaints, and what travelers are complaining about.
 
-📊 [Explore the interactive dashboard on Tableau Public](TABLEAU_PUBLIC_LINK) · 📄 [Read the design write-up (PDF)](tsa_complaints_writeup.pdf) · 📓 [View the data prep notebook](tsa_complaints_data_prep.ipynb)
+📊 [Explore the interactive dashboard on Tableau Public](https://public.tableau.com/app/profile/leo.luera/viz/DSC640Week9and10Assignment-Luera/Dashboard1) · 📄 [Read the design write-up (PDF)](tsa_complaints_writeup.pdf) · 📓 [View the data prep notebook](tsa_complaints_data_prep.ipynb)
 
 ---
 
@@ -10,10 +10,11 @@
 
 ## Key Findings
 
-- **Complaints didn't just recover after COVID-19; they hit record highs.** Annual complaints held at roughly 100,000–117,000 from 2016 to 2019, fell to about 45,000 in 2020 as travel collapsed, then surged past 165,000 in both 2022 and 2023.
-- **A few large hub airports account for an outsized share of complaints**, largely because they screen the most passengers.
-- **TSA PreCheck is itself a leading source of complaints.** Drilling into subcategories shows that the program designed to speed up screening is one of the biggest complaint drivers.
-- **Complaint mix shifts over time**, with some categories growing while others hold steady, which the stacked area chart makes visible month by month.
+- **Complaints didn't just recover after COVID-19; they hit record highs.** Annual complaints held at roughly 100,000–117,000 from 2016 to 2019, fell to about 45,000 in 2020 as travel collapsed, then surged past 165,000 in both 2022 and 2023. (2024 includes only part of the year.)
+- **Atlanta stands out.** Hartsfield-Jackson (ATL) logged about 1,800–2,400 complaints a year before COVID, then 4,533 in 2022 and 5,314 in 2023, more than double its pre-pandemic level. Its busiest months topped 500 complaints.
+- **The surge reached smaller airports too.** Austin (AUS) went from 394 complaints in 2019 to about 1,470 in both 2022 and 2023, nearly four times as many.
+- **TSA PreCheck is itself a leading source of complaints.** In the subcategory treemap, PreCheck is one of the largest blocks, meaning the program designed to speed up screening is one of the biggest complaint drivers.
+- **What travelers complain about changed after 2020.** Before the pandemic, mishandled passenger property made up a large share of monthly complaints; afterward, customer service complaints dominate.
 
 ## Call to Action
 
