@@ -1,1 +1,59 @@
-# tsa_complaints
+# A Decade of TSA Complaints (2015–2024)
+
+**Are airport security complaints getting better or worse, and where are they coming from?** This interactive Tableau dashboard tells the story of ten years of complaints filed with the Transportation Security Administration, showing how volume changed through COVID-19, which airports generate the most complaints, and what travelers are complaining about.
+
+📊 [Explore the interactive dashboard on Tableau Public](TABLEAU_PUBLIC_LINK) · 📄 [Read the design write-up (PDF)](tsa_complaints_writeup.pdf) · 📓 [View the data prep notebook](tsa_complaints_data_prep.ipynb)
+
+---
+
+![TSA complaints dashboard](images/tsa_dashboard.png)
+
+## Key Findings
+
+- **Complaints didn't just recover after COVID-19; they hit record highs.** Annual complaints held at roughly 100,000–117,000 from 2016 to 2019, fell to about 45,000 in 2020 as travel collapsed, then surged past 165,000 in both 2022 and 2023.
+- **A few large hub airports account for an outsized share of complaints**, largely because they screen the most passengers.
+- **TSA PreCheck is itself a leading source of complaints.** Drilling into subcategories shows that the program designed to speed up screening is one of the biggest complaint drivers.
+- **Complaint mix shifts over time**, with some categories growing while others hold steady, which the stacked area chart makes visible month by month.
+
+## Call to Action
+
+Travelers who experience problems at security should file a complaint at [TSA.gov/contact](https://www.tsa.gov/contact) or by phone at 1-866-289-9673. Policymakers can use the dashboard to target reform at the highest-complaint airports and categories.
+
+## Dashboard Design
+
+- **Audience:** Everyday U.S. air travelers who are familiar with security screening but not with complaint data or how to file a complaint.
+- **Purpose:** To inform and empower, showing travelers whether their frustrations are shared and where problems concentrate.
+- **Medium:** An interactive Tableau dashboard, so viewers can filter by year and explore airports without any data skills.
+- **Flow:** The story opens with the ten-year trend line, then grounds it geographically with a bubble map, and then breaks it down by complaint type.
+
+| Visual | What it shows |
+|--------|---------------|
+| Trend line | Annual complaints, 2015–2024, against the ten-year average |
+| Bubble map | Total complaints by airport, sized by volume |
+| Stacked area chart | Monthly complaints by category |
+| Heatmap | Complaint intensity by airport over time |
+| Box plot | Monthly variability by airport, separating consistently high airports from those with seasonal spikes |
+| Treemap | Specific complaint subcategories within each category |
+
+## Data
+
+| Dataset | Description |
+|---------|-------------|
+| `complaints-by-airport.csv` | Monthly complaint counts by airport (41,721 rows) |
+| `complaints-by-category.csv` | Monthly counts by airport and complaint category (241,588 rows) |
+| `complaints-by-subcategory.csv` | Monthly counts by airport, category, and subcategory (504,512 rows) |
+| `iata-icao.csv` | Airport codes, names, and coordinates worldwide (8,937 airports) |
+
+Data was compiled from TSA's public complaint reports. The notebook filters airport codes to the U.S., totals complaints by airport, joins in names and coordinates for mapping, and builds a separate dataset of civil rights and disability-related complaints by airport for equity analysis. The visuals were then built in Tableau.
+
+## Ethical Considerations
+
+Complaint data only reflects travelers who knew how to file and chose to, so people with limited English, lower digital literacy, or distrust of government channels are likely underrepresented, especially in civil rights complaints. Raw counts also favor large airports with more passengers. Airports are named only in aggregate, from official public records, with the goal of systemic accountability rather than blame.
+
+## Tools
+
+Tableau · Python · pandas · Jupyter
+
+---
+
+*Completed May 2026 for DSC 640 (Data Presentation and Visualization).*
