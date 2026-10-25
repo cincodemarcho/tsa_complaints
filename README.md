@@ -2,7 +2,7 @@
 
 **Are airport security complaints getting better or worse, and where are they coming from?** This interactive Tableau dashboard tells the story of ten years of complaints filed with the Transportation Security Administration, showing how volume changed through COVID-19, which airports generate the most complaints, and what travelers are complaining about.
 
-📊 [Explore the interactive dashboard on Tableau Public](https://public.tableau.com/app/profile/leo.luera/viz/DSC640Week9and10Assignment-Luera/Dashboard1) · 📄 [Read the design write-up (PDF)](tsa_complaints_writeup.pdf) · 📓 [View the data prep notebook](tsa_complaints_data_prep.ipynb)
+📊 [Interactive dashboard (Tableau Public)](https://public.tableau.com/app/profile/leo.luera/viz/DSC640Week9and10Assignment-Luera/Dashboard1) · 📄 [Paper](tsa_complaints_writeup.pdf) · 📓 [Notebook](tsa_complaints_data_prep.ipynb)
 
 ---
 
